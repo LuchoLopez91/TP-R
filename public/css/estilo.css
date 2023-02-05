@@ -1,0 +1,291 @@
+/*FUENTES*/
+
+@import url('http://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+ /*VARIABLES*/
+:root {
+    --verde: #18BC9C;
+    --azul: #2C3E50;
+    --fuentetitulo: montserrat;
+    --fuenteparrafo: lato;    
+}
+html {
+    scroll-behavior: smooth;
+  }
+/*HEADER*/
+header {
+    background-color: var(--azul);
+    padding: 20px 0;
+}
+
+header .enlace-superior{
+    font-family: var(--fuentetitulo);
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header .enlace-superior a{
+    margin: 0.5rem;
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+}
+
+header .main-dire {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: var(--fuentetitulo);
+    font-weight: bold;
+    float: left;
+    margin-left: 20px;
+}
+
+/* CONTENEDOR PRESENTACION */
+.contenedor-logo-frase {
+    background-color: var(--verde);
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 40px;
+}
+
+.contenedor-logo-frase .descripcion{
+ color: white;
+text-align: center;
+font-family: var(--fuentetitulo);
+padding-bottom: 30px;
+}
+
+.contenedor-logo-frase .frase{
+    color: white;
+    font-family: var(--fuentetitulo);
+    font-size: 50px;
+    font-weight:900;
+    text-align: center;
+}
+
+.contenedor-logo-frase .separador{
+    font-size: 20px;
+    color: white;
+    margin-top: -40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor-logo-frase .separador p{
+    width: 120px;
+    background-color: white;
+    height: 5px;
+    border-radius: 16%;
+    margin: 1rem;
+}
+
+/* CONTENEDOR IMAGENES*/
+
+.seccion-tarjetas .separador p{
+    width: 120px;
+    background-color: var(--azul);
+    height: 5px;
+    border-radius: 16%;
+    margin: 1rem;
+}
+
+.seccion-tarjetas .separador{
+    font-size: 20px;
+    color: var(--azul);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.seccion-tarjetas h1{
+color: var(--azul);
+text-align: center;
+font-size: 40px;
+margin-top: 50px;
+}
+
+.seccion-tarjetas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seccion-tarjetas .tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.seccion-tarjetas .tarjetas img{
+ width: 28%;
+ object-fit: contain;
+ margin-top: 40px;
+}
+
+
+/* CONTENEDOR SOBRE NOSOTROS */
+.contenedor-sobreNosotros{
+    background-color: var(--verde);
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    justify-content: center;
+    align-items: center; 
+    height: 400px;
+    margin-top: 40px;
+}
+
+.contenedor-sobreNosotros .separador{
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contenedor-sobreNosotros .separador p{
+    width: 120px;
+    background-color: white;
+    height: 5px;
+    border-radius: 16%;
+    /* margin-bottom: 20px; */
+}
+.contenedor-sobreNosotros h1{
+    color: white;
+    font-family: var(--fuentetitulo);
+    font-weight: bold;
+}
+
+.txt-about{
+    width: 30%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt-about p{
+    margin: 0.9rem;
+    color: white;
+    font-family: var(--fuenteparrafo);
+    font-size: 1rem;
+}
+
+.btn-download button{
+    background-color: var(--verde); 
+    color: white; 
+    border: 2px solid white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 30px 30px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.btn-download a{
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+}
+
+/*  CONTENEDOR FOMULARIO */
+
+
+.contact-me h1{
+    color: var(--azul);
+    font-family: var(--fuentetitulo);
+    font-weight: bold;
+}
+
+.contact-me .separador-1{
+    font-size: 20px;
+    color: var(--azul);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-me .separador-1 p{
+    width: 120px;
+    background-color: var(--azul);
+    height: 5px;
+    border-radius: 16%;
+    margin: 1rem;
+}
+
+
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: var(--azul);
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    align-items: center;
+}
+
+h4#titulo {
+    
+    font-family: var(--fuentetitulo);
+}
+.titulos-footer  {
+    width: 25%;
+    height: auto;
+    text-align: center;
+}
+.titulos-footer2  {
+    width: 25%;
+    height: auto;
+    text-align: center;
+    
+
+}
+.iconos a {
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    font-size: 26px;
+    height: 40px;
+    outline: 2px solid #fff;
+    text-decoration: none;
+    width: 40px; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+}
+.iconos {
+    display: flex;
+    justify-content: space-between;
+}
+.titulos-footer3 {
+    width: 25%;
+    text-align: center;
+}
+.titulos-footer3 p {
+    text-align: center;
+}
+.titulos-footer3 p a {
+    text-decoration: none;
+    color: var(--verde);
+    
+}
