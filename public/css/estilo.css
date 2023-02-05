@@ -10,15 +10,19 @@
     --fuentetitulo: montserrat;
     --fuenteparrafo: lato;    
 }
+/* * {
+    box-sizing: border-box;
+} */
 html {
     scroll-behavior: smooth;
+    
   }
 /*HEADER*/
 header {
     background-color: var(--azul);
     padding: 20px 0;
+    width: auto;
 }
-
 header .enlace-superior{
     font-family: var(--fuentetitulo);
     font-weight: bold;
@@ -32,7 +36,9 @@ header .enlace-superior a{
     background-color: transparent;
     text-decoration: none;
     color: white;
+    margin-right: 45px;
 }
+
 
 header .main-dire {
     color: white;
@@ -42,6 +48,18 @@ header .main-dire {
     font-weight: bold;
     float: left;
     margin-left: 20px;
+    margin-top: 10px;
+}
+.fa-solid.fa-bars{
+    color: white;
+    background-color: var(--verde);
+    font-size: 15px;
+    border-radius: 5%;
+    width:65px;
+    padding: 2%;
+    flex-direction: row-reverse;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* CONTENEDOR PRESENTACION */
@@ -61,12 +79,13 @@ header .main-dire {
 text-align: center;
 font-family: var(--fuentetitulo);
 padding-bottom: 30px;
+font-size:15px ;
 }
 
 .contenedor-logo-frase .frase{
     color: white;
     font-family: var(--fuentetitulo);
-    font-size: 50px;
+    font-size: 45px;
     font-weight:900;
     text-align: center;
 }
@@ -81,7 +100,7 @@ padding-bottom: 30px;
 }
 
 .contenedor-logo-frase .separador p{
-    width: 120px;
+    width: 100px;
     background-color: white;
     height: 5px;
     border-radius: 16%;
@@ -115,22 +134,24 @@ margin-top: 50px;
 
 .seccion-tarjetas{
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     flex-direction: column;
 }
 
 .seccion-tarjetas .tarjetas{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-evenly;
     align-items: center;
+    flex-direction: column;
 }
 
 .seccion-tarjetas .tarjetas img{
- width: 28%;
- object-fit: contain;
- margin-top: 40px;
+ width:100% ;
+ object-fit:contain;
+ margin-top: 6px;
+ 
 }
 
 
@@ -152,7 +173,7 @@ margin-top: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 10px;
+    margin-top: -30px;
 }
 
 .contenedor-sobreNosotros .separador p{
@@ -166,12 +187,11 @@ margin-top: 50px;
     color: white;
     font-family: var(--fuentetitulo);
     font-weight: bold;
+    margin-top: -30px;
 }
 
 .txt-about{
-    width: 30%;
     height: 40%;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -192,7 +212,7 @@ margin-top: 50px;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 30px 30px;
+    margin-top: 70px;
     cursor: pointer;
     border-radius: 12px;
 }
@@ -218,6 +238,7 @@ margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -30px;
 }
 
 .contact-me .separador-1 p{
@@ -227,7 +248,41 @@ margin-top: 50px;
     border-radius: 16%;
     margin: 1rem;
 }
+form.formulario{
+display: flex;
+flex-direction: column;
+justify-content: left;
+align-items: left;
+box-sizing: border-box;
+width: 290px;  
+padding: 30px 45px;
+}
 
+form.formulario label {
+    font-family: var(--fuentetitulo);
+    margin-top: 4%;
+}
+form.formulario input {
+    border-bottom: 1px solid grey;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+}
+input#caja-comentarios {
+    height: 100px;
+}
+
+button.btn-send{
+    width: fit-content;
+    background-color: var(--verde);
+    color: white;
+    border: var(--verde);
+    height: 30px;
+    font-family: var(--fuentetitulo);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
 
 
 
@@ -239,9 +294,10 @@ footer {
     color: white;
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    height: 200px;
+    /* justify-content: space-around; */
+    height: auto;
     align-items: center;
+    flex-direction: column;
 }
 
 h4#titulo {
@@ -249,36 +305,34 @@ h4#titulo {
     font-family: var(--fuentetitulo);
 }
 .titulos-footer  {
-    width: 25%;
+    width: 50%;
     height: auto;
     text-align: center;
 }
 .titulos-footer2  {
-    width: 25%;
+    width: 50%;
     height: auto;
     text-align: center;
-    
-
 }
 .iconos a {
     border-radius: 50%;
-    color: #fff;
+    color: white;
     display: flex;
-    font-size: 26px;
-    height: 40px;
-    outline: 2px solid #fff;
+    font-size: 23px;
+    height: 35px;
+    outline: 1px solid white;
     text-decoration: none;
-    width: 40px; 
+    width: 30px; 
     justify-content: center;
     align-items: center;
-    margin-top: 18px;
+    margin-top: 5px;
 }
 .iconos {
-    display: flex;
+    display:flex;
     justify-content: space-between;
 }
 .titulos-footer3 {
-    width: 25%;
+    width: 50%;
     text-align: center;
 }
 .titulos-footer3 p {
@@ -288,4 +342,103 @@ h4#titulo {
     text-decoration: none;
     color: var(--verde);
     
+}
+
+/* MEDIA MOBILE */
+
+@media (min-width: 320px){
+    .enlace-superior{
+        visibility: hidden;
+    }
+    i.fa-solid.fa-bars{
+        margin-left: 20px;
+        margin-top: 5px;
+    }   
+}
+
+/* MEDIA TABLET */
+
+@media (min-width:768px){
+    header{
+        height: 50px;
+    }
+    a.main-dire{
+        margin-top: 20px;
+    }
+    .enlace-superior{
+        visibility: hidden;
+    }
+    i.fa-solid.fa-bars{
+        float: right;
+        margin-top: -30px;
+        margin-right: 30px;
+    }
+    .seccion-tarjetas .tarjetas img{
+        width:45% ;
+    }
+    .seccion-tarjetas .tarjetas{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+   
+    .txt-about p{
+        font-size: 1.4rem;
+    }
+    form.formulario{
+        width: 690px;  
+    }
+    footer {
+       flex-direction: row;
+    }
+    .titulos-footer  {
+        width: 45%;
+    }
+    .titulos-footer2  {
+        width: 30%;
+        margin-bottom: 30px;
+        margin-right: 30px;
+    }
+    .titulos-footer3  {
+        width: 40%;
+    }
+}
+
+/*  MEDIA DESKTOP */
+
+@media (min-width: 1024px){
+   div.burger-menu{
+        visibility:hidden;
+    }
+    a.main-dire{
+        margin-top: 9px;
+    }
+    .enlace-superior{
+        visibility:visible;
+        margin-top: 5px;
+    }
+    .contenedor-logo-frase .frase{
+        font-size: 55px;
+    }
+    .contenedor-logo-frase .descripcion{
+       font-size:25px ;
+    }
+    
+    .seccion-tarjetas .tarjetas img{
+     width: 28%;
+    }
+    .contenedor-sobreNosotros {
+        height: 550px;
+    }
+    .txt-about{
+        display: flex;
+    }
+    .txt-about p{
+        font-size: 25px;
+        text-align: center;
+        margin: 3.9rem;
+    }
+    footer {
+        height: 200px;
+     }
 }
